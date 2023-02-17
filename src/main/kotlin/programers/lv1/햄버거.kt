@@ -10,15 +10,15 @@ fun main(args: Array<String>) {
     val arr4:IntArray = intArrayOf(1, 2, 3, 1, 2, 3, 1, 1, 1, 1, 2, 3, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 3, 1) // 3
     val arr5:IntArray = intArrayOf(1, 2, 3, 1, 2, 3, 1, 1, 1, 1, 2, 3, 1, 2, 3, 1) // 3
     val arr6:IntArray = intArrayOf(1, 2, 2, 3, 1) // 0
-    println(test3(arr))
-    println(test3(arr2))
-    println(test3(arr3))
-    println(test3(arr4))
-    println(test3(arr5))
-    println(test3(arr6))
+    println(햄버거(arr))
+    println(햄버거(arr2))
+    println(햄버거(arr3))
+    println(햄버거(arr4))
+    println(햄버거(arr5))
+    println(햄버거(arr6))
 }
 
-fun test3(ingredient: IntArray): Int {
+fun 햄버거(ingredient: IntArray): Int {
     // 1,2,3,1 -> 햄버거 1개
     var answer: Int = 0
 

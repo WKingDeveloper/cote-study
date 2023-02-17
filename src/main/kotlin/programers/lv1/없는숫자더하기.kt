@@ -5,11 +5,11 @@
 
 fun main(args: Array<String>) {
     val arr:IntArray = intArrayOf(1,2,3,4,6,7,8,0)
-    test4(arr)
+    없는숫자더하기(arr)
 }
 
 
-fun test4(numbers: IntArray): Int {
+fun 없는숫자더하기(numbers: IntArray): Int {
     var answer: Int = 0
     var set = numbers.toSet()
 

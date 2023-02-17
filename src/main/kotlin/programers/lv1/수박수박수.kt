@@ -4,9 +4,9 @@
  */
 
 fun main(args: Array<String>) {
-    println(test6(4))
+    println(수박수박수(4))
 }
 
-fun test6(n: Int): String {
+fun 수박수박수(n: Int): String {
     return "수박".repeat(n/2) + if(n%2==1) "수" else ""
 }

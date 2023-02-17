@@ -4,11 +4,11 @@
  */
 
 fun main(args: Array<String>) {
-    println(test5("one4seveneight"))
+    println(숫자문자열과영단어("one4seveneight"))
 }
 
 
-fun test5(s: String): Int {
+fun 숫자문자열과영단어(s: String): Int {
 
     return s.replace("zero","0")
         .replace("one","1")

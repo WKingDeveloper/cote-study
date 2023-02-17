@@ -4,11 +4,11 @@
  */
 fun main(args: Array<String>) {
     val arr:IntArray = intArrayOf(1, 2, 3, 1, 2, 3, 1)
-    test1(3,4, arr)
+    과일장수(3,4, arr)
 
 }
 
-fun test1(k: Int, m: Int, score: IntArray): Int {
+fun 과일장수(k: Int, m: Int, score: IntArray): Int {
     var answer: Int = 0
     val sortedArrayDescending = score.sortedArrayDescending()
     val boxSize = score.size / m
