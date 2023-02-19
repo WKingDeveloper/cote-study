@@ -4,7 +4,7 @@
  */
 
 fun main() {
-    val 카드뭉치 = 카드뭉치(arrayOf("a","apple","is",), arrayOf("a","apple"), arrayOf("a","apple","is","a","apple"))
+    val 카드뭉치 = 카드뭉치(arrayOf("is","a"), arrayOf("a","apple","apple"), arrayOf("a","apple","is","a","apple"))
     println("카드뭉치 = ${카드뭉치}")
 }
 
@@ -14,7 +14,21 @@ fun 카드뭉치(cards1: Array<String>, cards2: Array<String>, goal: Array<Strin
     var card1List = mutableListOf<String>(*cards1)
     var card2List = mutableListOf<String>(*cards2)
 
-    while (goalList.size>0){
+    for(word in goalList){
+        if(card1List.size>0 && word == card1List[0]){
+            card1List.removeAt(0)
+            continue
+        }
+        if(card2List.size>0 && word == card2List[0]){
+            card2List.removeAt(0)
+        } else{
+            return "No"
+        }
+    }
+    return "Yes"
+
+    /*while (goalList.size>0){
+        println("goalList.size = ${goalList.size}")
         var card1Result = false;
         var card2Result = false;
         if(card1List.size>0){
@@ -28,7 +42,7 @@ fun 카드뭉치(cards1: Array<String>, cards2: Array<String>, goal: Array<Strin
         }
     }
 
-    return "Yes"
+    return "Yes"*/
 }
 
 fun MutableList<String>.removeContainsIndex(list : MutableList<String>) : Boolean{
