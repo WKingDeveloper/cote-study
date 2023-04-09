@@ -19,6 +19,8 @@ fun 프린터(priorities: IntArray, location: Int): Int {
     }
 
     while (pairs.size>0){
+//        val validCount = pairs.filter { it -> it.second > pairs.peek().second }.firstOrNull()
+//        if(validCount!=null){
         val validCount = pairs.filter { it -> it.second > pairs.peek().second }.count()
         if(validCount>0){
             pairs.add(pairs.poll())
